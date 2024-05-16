@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getLatestPrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/contract01.sol": "IPriceConsumerV3"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/contract01.sol": {
+			"keccak256": "0x86ec2bcb440c8727e057dc80aafa09d65dcb87ad427a9df07599e90a83688367",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://7c22fb9609baa200c05f04da54626cda348115014c81b52f4cc54c43031e42a6",
+				"dweb:/ipfs/QmXfE5X6wQFf6PqdvUbXb5uFyjxUFSN8ZK2Y4qbfW9ahmR"
+			]
+		}
+	},
+	"version": 1
+}

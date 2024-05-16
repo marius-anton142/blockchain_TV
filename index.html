@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Voter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+
+<body
+    style="background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F018%2F742%2F974%2Foriginal%2Fold-vintage-tv-with-blank-transparent-screen-and-background-format-png.png&f=1&nofb=1&ipt=be7e5b4d27432a2e17ea5b4068c2f90ed10d8ce012888f5997065b4af1617225&ipo=images');background-size: cover; background-position: center;background-repeat: no-repeat;background-attachment: fixed; background-color: #a18980;">
+    <div style="width: 33%; position: absolute; left: 36%; height: 68%; top: 30%;">
+        <div id="videoPlayer" style="max-width: 100%; max-height: 100%;"></div>
+    </div>
+
+    <div style="position: absolute;
+    right: 297px;
+    top: 40px;">
+        <button id="connectWallet">Connect Wallet</button>
+        <div id="status" style="background-color: #e1ac9787;
+        padding: 5px;
+        margin: 5px;"></div>
+    </div>
+
+    <div id="ethPriceDisplay" style="position: absolute; left: 50%";>Ethereum Price: Loading...</div>
+
+    <!-- Proposal Submission -->
+    <div id="proposalsOperations" style="display: none;
+    background: #f5deb32e;
+    position: absolute;
+    width: 402px;
+    left: 212px;">
+        <div style="display: flex; flex-direction: column;">
+            <input id="proposalName" type="text" placeholder="Enter song name">
+            <input id="proposalUrl" type="text" placeholder="Enter YouTube URL">
+            <button id="submitProposal">Submit Proposal</button>
+        </div>
+        <div id="proposalStatus"></div>
+
+        <div id="voteStatus"></div>
+        <div id="proposalsList" style="height: 500px;overflow: auto;"></div>
+        <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/web3@1.7.1/dist/web3.min.js"></script>
+        <script src="app.js"></script>
+    </div>
+    <div id="errorMessages" style="position: absolute;
+    top: 40px;"></div>
+</body>
+
+</html>
