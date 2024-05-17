@@ -1,0 +1,780 @@
+{
+  "contractName": "IProposelContract",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "url",
+          "type": "string"
+        }
+      ],
+      "name": "addProposel",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "url",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "votes",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "uniqueHash",
+              "type": "bytes32"
+            }
+          ],
+          "internalType": "struct Proposel",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "listProposels",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "url",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "votes",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "uniqueHash",
+              "type": "bytes32"
+            }
+          ],
+          "internalType": "struct Proposel[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getWinningProposel",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "url",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "votes",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "uniqueHash",
+              "type": "bytes32"
+            }
+          ],
+          "internalType": "struct Proposel",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "removeWinningPropsel",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "url",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "votes",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "uniqueHash",
+              "type": "bytes32"
+            }
+          ],
+          "internalType": "struct Proposel",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "proposel_id",
+          "type": "uint256"
+        }
+      ],
+      "name": "decreaseVotes",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "proposel_id",
+          "type": "uint256"
+        }
+      ],
+      "name": "increaseVotes",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"url\",\"type\":\"string\"}],\"name\":\"addProposel\",\"outputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"url\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"votes\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"bytes32\",\"name\":\"uniqueHash\",\"type\":\"bytes32\"}],\"internalType\":\"struct Proposel\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"proposel_id\",\"type\":\"uint256\"}],\"name\":\"decreaseVotes\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getWinningProposel\",\"outputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"url\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"votes\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"bytes32\",\"name\":\"uniqueHash\",\"type\":\"bytes32\"}],\"internalType\":\"struct Proposel\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"proposel_id\",\"type\":\"uint256\"}],\"name\":\"increaseVotes\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"listProposels\",\"outputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"url\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"votes\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"bytes32\",\"name\":\"uniqueHash\",\"type\":\"bytes32\"}],\"internalType\":\"struct Proposel[]\",\"name\":\"\",\"type\":\"tuple[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"removeWinningPropsel\",\"outputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"url\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"votes\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"bytes32\",\"name\":\"uniqueHash\",\"type\":\"bytes32\"}],\"internalType\":\"struct Proposel\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Interfaces.sol\":\"IProposelContract\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Interfaces.sol\":{\"keccak256\":\"0x754bd72460427fd9d45803490d23a3b94d3aa3662ff8e967110ba7303f0a2617\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://049e581cae47c842b55a1ba0c5816abee940f60c86d42bf5df3ec24531e74eee\",\"dweb:/ipfs/QmQuXEb4rZjEFymem9pXuoDBwQemfpTL68cbL8Q4zHn6rF\"]},\"project:/contracts/Models.sol\":{\"keccak256\":\"0x905f25a04f366b9ea164c6895ba432ea00f1d933e983248bdfb3a55e8dfb3372\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://e3b5d80e66113b67c9269f260dc0346c785194806863149ed0fd855c51389162\",\"dweb:/ipfs/QmarHtSzwnSShVtt9tpz1geP5KhWTigsL8cqnRNoKUH7NN\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: GPL-3.0\r\npragma solidity >=0.7.0 <0.9.0;\r\n\r\nimport {Proposel} from \"./Models.sol\";\r\n\r\ninterface IProposelContract {\r\n    function addProposel(string memory name, string memory url) external returns (Proposel memory);\r\n\r\n    function listProposels() external view returns (Proposel[] memory);\r\n\r\n    function getWinningProposel() view external returns (Proposel memory);\r\n\r\n    function removeWinningPropsel() external returns (Proposel memory) ;\r\n\r\n    function decreaseVotes(uint proposel_id) external;\r\n    \r\n    function increaseVotes(uint proposel_id)  external ;\r\n}",
+  "sourcePath": "D:\\proiect-blockChain2\\contracts\\Interfaces.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Interfaces.sol",
+    "exportedSymbols": {
+      "IProposelContract": [
+        881
+      ],
+      "Proposel": [
+        1027
+      ]
+    },
+    "id": 882,
+    "license": "GPL-3.0",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 839,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.7",
+          ".0",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "37:31:4"
+      },
+      {
+        "absolutePath": "project:/contracts/Models.sol",
+        "file": "./Models.sol",
+        "id": 841,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 882,
+        "sourceUnit": 1034,
+        "src": "72:38:4",
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 840,
+              "name": "Proposel",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 1027,
+              "src": "80:8:4",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IProposelContract",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 881,
+        "linearizedBaseContracts": [
+          881
+        ],
+        "name": "IProposelContract",
+        "nameLocation": "124:17:4",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "6f7789a1",
+            "id": 851,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addProposel",
+            "nameLocation": "158:11:4",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 846,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 843,
+                  "mutability": "mutable",
+                  "name": "name",
+                  "nameLocation": "184:4:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 851,
+                  "src": "170:18:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 842,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "170:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 845,
+                  "mutability": "mutable",
+                  "name": "url",
+                  "nameLocation": "204:3:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 851,
+                  "src": "190:17:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 844,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "190:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "169:39:4"
+            },
+            "returnParameters": {
+              "id": 850,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 849,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 851,
+                  "src": "227:15:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Proposel_$1027_memory_ptr",
+                    "typeString": "struct Proposel"
+                  },
+                  "typeName": {
+                    "id": 848,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 847,
+                      "name": "Proposel",
+                      "nameLocations": [
+                        "227:8:4"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 1027,
+                      "src": "227:8:4"
+                    },
+                    "referencedDeclaration": 1027,
+                    "src": "227:8:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Proposel_$1027_storage_ptr",
+                      "typeString": "struct Proposel"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "226:17:4"
+            },
+            "scope": 881,
+            "src": "149:95:4",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "94964edf",
+            "id": 858,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "listProposels",
+            "nameLocation": "261:13:4",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 852,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "274:2:4"
+            },
+            "returnParameters": {
+              "id": 857,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 856,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 858,
+                  "src": "300:17:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Proposel_$1027_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "struct Proposel[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 854,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode": {
+                        "id": 853,
+                        "name": "Proposel",
+                        "nameLocations": [
+                          "300:8:4"
+                        ],
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 1027,
+                        "src": "300:8:4"
+                      },
+                      "referencedDeclaration": 1027,
+                      "src": "300:8:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Proposel_$1027_storage_ptr",
+                        "typeString": "struct Proposel"
+                      }
+                    },
+                    "id": 855,
+                    "nodeType": "ArrayTypeName",
+                    "src": "300:10:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_Proposel_$1027_storage_$dyn_storage_ptr",
+                      "typeString": "struct Proposel[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "299:19:4"
+            },
+            "scope": 881,
+            "src": "252:67:4",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "6c9a5fa4",
+            "id": 864,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getWinningProposel",
+            "nameLocation": "336:18:4",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 859,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "354:2:4"
+            },
+            "returnParameters": {
+              "id": 863,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 862,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 864,
+                  "src": "380:15:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Proposel_$1027_memory_ptr",
+                    "typeString": "struct Proposel"
+                  },
+                  "typeName": {
+                    "id": 861,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 860,
+                      "name": "Proposel",
+                      "nameLocations": [
+                        "380:8:4"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 1027,
+                      "src": "380:8:4"
+                    },
+                    "referencedDeclaration": 1027,
+                    "src": "380:8:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Proposel_$1027_storage_ptr",
+                      "typeString": "struct Proposel"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "379:17:4"
+            },
+            "scope": 881,
+            "src": "327:70:4",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "7cdbf25c",
+            "id": 870,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "removeWinningPropsel",
+            "nameLocation": "414:20:4",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 865,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "434:2:4"
+            },
+            "returnParameters": {
+              "id": 869,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 868,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 870,
+                  "src": "455:15:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Proposel_$1027_memory_ptr",
+                    "typeString": "struct Proposel"
+                  },
+                  "typeName": {
+                    "id": 867,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 866,
+                      "name": "Proposel",
+                      "nameLocations": [
+                        "455:8:4"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 1027,
+                      "src": "455:8:4"
+                    },
+                    "referencedDeclaration": 1027,
+                    "src": "455:8:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Proposel_$1027_storage_ptr",
+                      "typeString": "struct Proposel"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "454:17:4"
+            },
+            "scope": 881,
+            "src": "405:68:4",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "9b757a2c",
+            "id": 875,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "decreaseVotes",
+            "nameLocation": "490:13:4",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 873,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 872,
+                  "mutability": "mutable",
+                  "name": "proposel_id",
+                  "nameLocation": "509:11:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 875,
+                  "src": "504:16:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 871,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "504:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "503:18:4"
+            },
+            "returnParameters": {
+              "id": 874,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "530:0:4"
+            },
+            "scope": 881,
+            "src": "481:50:4",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "ef46a75d",
+            "id": 880,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "increaseVotes",
+            "nameLocation": "552:13:4",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 878,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 877,
+                  "mutability": "mutable",
+                  "name": "proposel_id",
+                  "nameLocation": "571:11:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 880,
+                  "src": "566:16:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 876,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "566:4:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "565:18:4"
+            },
+            "returnParameters": {
+              "id": 879,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "594:0:4"
+            },
+            "scope": 881,
+            "src": "543:52:4",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 882,
+        "src": "114:484:4",
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "src": "37:561:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.21+commit.d9974bed.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2024-05-12T12:57:36.394Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

@@ -1,0 +1,353 @@
+{
+  "contractName": "ModelsContarct",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Models.sol\":\"ModelsContarct\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Models.sol\":{\"keccak256\":\"0x905f25a04f366b9ea164c6895ba432ea00f1d933e983248bdfb3a55e8dfb3372\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://e3b5d80e66113b67c9269f260dc0346c785194806863149ed0fd855c51389162\",\"dweb:/ipfs/QmarHtSzwnSShVtt9tpz1geP5KhWTigsL8cqnRNoKUH7NN\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600e575f80fd5b50603e80601a5f395ff3fe60806040525f80fdfea264697066735822122014e14b1374acb5d7bda8b0857e334439df11cb78fc1cf412dcff33949cb3ecda64736f6c63430008150033",
+  "deployedBytecode": "0x60806040525f80fdfea264697066735822122014e14b1374acb5d7bda8b0857e334439df11cb78fc1cf412dcff33949cb3ecda64736f6c63430008150033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "346:29:6:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "346:29:6:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: GPL-3.0\r\npragma solidity >=0.7.0 <0.9.0; \r\n\r\nstruct Proposel {\r\n        address owner;\r\n        string name;\r\n        string url;\r\n        uint256 timestamp;\r\n        uint votes;\r\n        uint id;\r\n        bytes32 uniqueHash;\r\n    }\r\n\r\nstruct PeriodInterval {\r\n        uint periodStart;\r\n        uint periodEnd;\r\n}\r\n\r\ncontract ModelsContarct{\r\n\r\n}",
+  "sourcePath": "D:\\proiect-blockChain2\\contracts\\Models.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Models.sol",
+    "exportedSymbols": {
+      "ModelsContarct": [
+        1033
+      ],
+      "PeriodInterval": [
+        1032
+      ],
+      "Proposel": [
+        1027
+      ]
+    },
+    "id": 1034,
+    "license": "GPL-3.0",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1012,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.7",
+          ".0",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "37:31:6"
+      },
+      {
+        "canonicalName": "Proposel",
+        "id": 1027,
+        "members": [
+          {
+            "constant": false,
+            "id": 1014,
+            "mutability": "mutable",
+            "name": "owner",
+            "nameLocation": "108:5:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 1027,
+            "src": "100:13:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 1013,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "100:7:6",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 1016,
+            "mutability": "mutable",
+            "name": "name",
+            "nameLocation": "131:4:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 1027,
+            "src": "124:11:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage_ptr",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 1015,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "124:6:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 1018,
+            "mutability": "mutable",
+            "name": "url",
+            "nameLocation": "153:3:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 1027,
+            "src": "146:10:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage_ptr",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 1017,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "146:6:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 1020,
+            "mutability": "mutable",
+            "name": "timestamp",
+            "nameLocation": "175:9:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 1027,
+            "src": "167:17:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1019,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "167:7:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 1022,
+            "mutability": "mutable",
+            "name": "votes",
+            "nameLocation": "200:5:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 1027,
+            "src": "195:10:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1021,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "195:4:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 1024,
+            "mutability": "mutable",
+            "name": "id",
+            "nameLocation": "221:2:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 1027,
+            "src": "216:7:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1023,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "216:4:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 1026,
+            "mutability": "mutable",
+            "name": "uniqueHash",
+            "nameLocation": "242:10:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 1027,
+            "src": "234:18:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes32",
+              "typeString": "bytes32"
+            },
+            "typeName": {
+              "id": 1025,
+              "name": "bytes32",
+              "nodeType": "ElementaryTypeName",
+              "src": "234:7:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "Proposel",
+        "nameLocation": "80:8:6",
+        "nodeType": "StructDefinition",
+        "scope": 1034,
+        "src": "73:187:6",
+        "visibility": "public"
+      },
+      {
+        "canonicalName": "PeriodInterval",
+        "id": 1032,
+        "members": [
+          {
+            "constant": false,
+            "id": 1029,
+            "mutability": "mutable",
+            "name": "periodStart",
+            "nameLocation": "302:11:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 1032,
+            "src": "297:16:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1028,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "297:4:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 1031,
+            "mutability": "mutable",
+            "name": "periodEnd",
+            "nameLocation": "329:9:6",
+            "nodeType": "VariableDeclaration",
+            "scope": 1032,
+            "src": "324:14:6",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 1030,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "324:4:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "PeriodInterval",
+        "nameLocation": "271:14:6",
+        "nodeType": "StructDefinition",
+        "scope": 1034,
+        "src": "264:78:6",
+        "visibility": "public"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ModelsContarct",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 1033,
+        "linearizedBaseContracts": [
+          1033
+        ],
+        "name": "ModelsContarct",
+        "nameLocation": "355:14:6",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 1034,
+        "src": "346:29:6",
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "src": "37:338:6"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.21+commit.d9974bed.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2024-05-12T12:57:36.400Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

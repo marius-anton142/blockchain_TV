@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+#videoPlayer {
+    margin-bottom: 20px;
+}
+input, button {
+    margin-top: 10px;
+}
+
+body{
+    background-image: "./old-vintage-tv.png";
+}
