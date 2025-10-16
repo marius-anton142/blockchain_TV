@@ -3,7 +3,7 @@
 ## Contacts
 Inside the contracts folder, the `final` folder can be found, importing that folder inside Remix online IDE and the contracts are ready to deploy
 
-During the contract implementation we fallowed :
+During the contract implementation we followed :
   * utilizarea tipurilor de date specifice Solidity (mappings, address).
   * înregistrarea de events.
   * utilizarea de modifiers.
